@@ -12,7 +12,7 @@
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts: Plus Jakarta Sans & Cinzel for subtle luxury accents -->
+  <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,7 +23,6 @@
       background-color: #09090B;
       color: #F4F4F6;
     }
-    /* Custom Metallic Gold Utilities matching R Globe Dark.png */
     .gold-gradient-text {
       background: linear-gradient(135deg, #F6E08B 0%, #D4AF37 50%, #AA7C11 100%);
       -webkit-background-clip: text;
@@ -35,9 +34,13 @@
     .gold-gradient-bg:hover {
       background: linear-gradient(135deg, #F9E086 0%, #DFBC48 55%, #C5971B 100%);
     }
+    .gold-border-glow {
+      transition: all 0.3s ease;
+    }
     .gold-border-glow:hover {
       border-color: rgba(212, 175, 55, 0.55);
-      box-shadow: 0 10px 35px -10px rgba(212, 175, 55, 0.16);
+      box-shadow: 0 12px 40px -12px rgba(212, 175, 55, 0.2);
+      transform: translateY(-3px);
     }
     .obsidian-card {
       background: linear-gradient(180deg, #141418 0%, #0E0E11 100%);
@@ -53,7 +56,7 @@
       
       <!-- Brand Logo + Name -->
       <a href="#" class="flex items-center gap-3 group">
-        <div class="w-12 h-12 rounded-xl bg-[#0D0D0F] border border-[#D4AF37]/30 p-1 flex items-center justify-center overflow-hidden shadow-md shadow-black/60 group-hover:border-[#D4AF37]/70 transition">
+        <div class="w-11 h-11 rounded-xl bg-[#0D0D0F] border border-[#D4AF37]/30 p-1 flex items-center justify-center overflow-hidden shadow-md shadow-black/60 group-hover:border-[#D4AF37]/70 transition">
           <img src="logo.png" alt="Rudra Solutions Logo" class="w-full h-full object-contain" />
         </div>
         <div class="leading-none">
@@ -63,11 +66,12 @@
       </a>
 
       <!-- Desktop Menu -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300">
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-zinc-300">
         <a href="#about-us" class="hover:text-[#E5C158] transition">About Us</a>
         <a href="#services" class="hover:text-[#E5C158] transition">Services</a>
         <a href="#process" class="hover:text-[#E5C158] transition">How We Work</a>
-        <a href="#why-us" class="hover:text-[#E5C158] transition">Why Us</a>
+        <a href="#results" class="hover:text-[#E5C158] transition">Results</a>
+        <a href="#faq" class="hover:text-[#E5C158] transition">FAQ</a>
         <a href="#contact" class="px-5 py-2.5 rounded-lg gold-gradient-bg text-[#09090B] font-bold transition shadow-md shadow-[#D4AF37]/15">
           Book a Strategy Call
         </a>
@@ -86,37 +90,37 @@
       <a href="#about-us" class="block py-2 text-zinc-300 hover:text-[#E5C158]">About Us</a>
       <a href="#services" class="block py-2 text-zinc-300 hover:text-[#E5C158]">Services</a>
       <a href="#process" class="block py-2 text-zinc-300 hover:text-[#E5C158]">How We Work</a>
-      <a href="#why-us" class="block py-2 text-zinc-300 hover:text-[#E5C158]">Why Us</a>
+      <a href="#results" class="block py-2 text-zinc-300 hover:text-[#E5C158]">Results</a>
+      <a href="#faq" class="block py-2 text-zinc-300 hover:text-[#E5C158]">FAQ</a>
       <a href="#contact" class="block py-2.5 text-center rounded-lg gold-gradient-bg text-[#09090B] font-bold">Book a Strategy Call</a>
     </div>
   </header>
 
   <!-- HERO SECTION -->
   <section class="pt-36 pb-24 px-6 relative overflow-hidden">
-    <!-- Subtle Luxury Gold Radial Glow -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_15%,_rgba(212,175,55,0.14),_transparent_55%)] pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_15%,_rgba(212,175,55,0.16),_transparent_50%)] pointer-events-none"></div>
     
     <div class="max-w-6xl mx-auto text-center relative z-10">
       
       <!-- Featured Logo Emblem -->
-      <div class="mx-auto w-24 h-24 sm:w-28 sm:h-28 mb-6 rounded-full bg-[#0D0D0F] border border-[#D4AF37]/35 p-2 shadow-2xl shadow-[#D4AF37]/10 flex items-center justify-center">
+      <div class="mx-auto w-24 h-24 sm:w-28 sm:h-28 mb-6 rounded-full bg-[#0D0D0F] border border-[#D4AF37]/40 p-2.5 shadow-2xl shadow-[#D4AF37]/15 flex items-center justify-center animate-pulse">
         <img src="logo.png" alt="Rudra Solutions Emblem" class="w-full h-full object-contain" />
       </div>
 
       <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-[#D4AF37]/10 text-[#E5C158] border border-[#D4AF37]/30 mb-6">
-        Full-Stack Growth & Brand Strategy Agency
+        Full-Stack Growth & Sales-Driven Agency
       </span>
 
-      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight max-w-4xl mx-auto">
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1] max-w-5xl mx-auto">
         Turn Attention Into Revenue With <span class="gold-gradient-text">Data-Driven Marketing</span>
       </h1>
 
-      <p class="mt-6 text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-        We build high-converting websites, run ROI-focused Google & Meta ad campaigns, and stay beside your team from the first inquiry until the deal is closed.
+      <p class="mt-6 text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+        We build high-converting websites, run high-ROI ad campaigns, and stay shoulder-to-shoulder with your team from the first inquiry until the deal is closed.
       </p>
 
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl gold-gradient-bg text-[#09090B] font-bold text-base transition shadow-lg shadow-[#D4AF37]/20">
+        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl gold-gradient-bg text-[#09090B] font-bold text-base transition shadow-lg shadow-[#D4AF37]/25 hover:scale-105">
           Get a Free Growth Proposal
         </a>
         <a href="https://wa.me/919391608271?text=Hi%20Rudra%20Solutions%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#141418] hover:bg-[#1C1C22] border border-[#2C2C34] hover:border-[#D4AF37]/50 text-white font-semibold text-base transition flex items-center justify-center gap-2">
@@ -193,18 +197,17 @@
         </div>
       </div>
 
-      <!-- PICTOGRAPHIC JOURNEY DIAGRAM: FROM FIRST IMPRESSION TO CLOSED DEAL -->
+      <!-- PICTOGRAPHIC JOURNEY DIAGRAM -->
       <div class="mt-16 p-6 sm:p-10 rounded-3xl bg-[#09090B] border border-[#232329] relative overflow-hidden">
         <div class="text-center max-w-2xl mx-auto mb-10">
           <p class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">How We Walk With You</p>
           <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-1.5">The Rudra Lead-to-Closure Pipeline</h3>
         </div>
 
-        <!-- 4-Node Visual Flow -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
           
           <!-- Stage 1 -->
-          <div class="relative p-6 rounded-2xl obsidian-card flex flex-col items-center text-center gold-border-glow transition">
+          <div class="relative p-6 rounded-2xl obsidian-card flex flex-col items-center text-center gold-border-glow">
             <div class="w-16 h-16 rounded-2xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#E5C158] flex items-center justify-center mb-4">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/>
@@ -221,7 +224,7 @@
           </div>
 
           <!-- Stage 2 -->
-          <div class="relative p-6 rounded-2xl obsidian-card flex flex-col items-center text-center gold-border-glow transition">
+          <div class="relative p-6 rounded-2xl obsidian-card flex flex-col items-center text-center gold-border-glow">
             <div class="w-16 h-16 rounded-2xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#E5C158] flex items-center justify-center mb-4">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
@@ -237,7 +240,7 @@
             </div>
           </div>
 
-          <!-- Stage 3 (Highlighted Gold Differentiator) -->
+          <!-- Stage 3 (Highlighted Differentiator) -->
           <div class="relative p-6 rounded-2xl bg-gradient-to-b from-[#D4AF37]/15 to-[#0E0E11] border border-[#D4AF37]/50 flex flex-col items-center text-center shadow-lg shadow-[#D4AF37]/5">
             <span class="absolute -top-3 px-3 py-0.5 rounded-full gold-gradient-bg text-[#09090B] text-[10px] font-extrabold uppercase tracking-wider">
               Where Others Stop
@@ -257,7 +260,7 @@
             </div>
           </div>
 
-          <!-- Stage 4 (Final Revenue Outcome) -->
+          <!-- Stage 4 -->
           <div class="relative p-6 rounded-2xl bg-gradient-to-b from-emerald-500/12 to-[#0E0E11] border border-emerald-500/40 flex flex-col items-center text-center">
             <div class="w-16 h-16 rounded-2xl bg-emerald-500/20 border border-emerald-400/50 text-emerald-400 flex items-center justify-center mb-4">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
@@ -271,17 +274,6 @@
             </p>
           </div>
 
-        </div>
-
-        <!-- Bottom Visual Progress Bar -->
-        <div class="mt-8 pt-6 border-t border-[#232329] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-          <div class="flex items-center gap-2 text-zinc-400">
-            <span class="w-2.5 h-2.5 rounded-full bg-[#D4AF37]"></span>
-            <span>End-to-End Accountability: We measure success by <strong class="text-white">closed business</strong>, not vanity clicks.</span>
-          </div>
-          <a href="#contact" class="text-[#E5C158] hover:text-[#F6E08B] font-bold shrink-0">
-            Let’s build your pipeline →
-          </a>
         </div>
       </div>
 
@@ -298,43 +290,37 @@
       </div>
 
       <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Service 1 -->
-        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow">
           <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">01</div>
           <h3 class="text-xl font-bold text-white">Google & Meta Ads</h3>
           <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Targeted search, display, Instagram, and Facebook lead-generation campaigns engineered to lower your cost per acquisition.</p>
         </div>
 
-        <!-- Service 2 -->
-        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow">
           <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">02</div>
           <h3 class="text-xl font-bold text-white">Web Design & Development</h3>
           <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Fast, mobile-first websites and landing pages designed with clear messaging and conversion triggers that turn visitors into inquiries.</p>
         </div>
 
-        <!-- Service 3 -->
-        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow">
           <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">03</div>
           <h3 class="text-xl font-bold text-white">Search Engine Optimization</h3>
           <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Technical SEO, local Google Business optimization, and high-intent content strategies to rank your brand where buyers are searching.</p>
         </div>
 
-        <!-- Service 4 -->
-        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow">
           <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">04</div>
           <h3 class="text-xl font-bold text-white">Branding & Identity</h3>
           <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Distinctive logos, brand guidelines, packaging, and market positioning that establish instant trust and premium recall.</p>
         </div>
 
-        <!-- Service 5 -->
-        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow">
           <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">05</div>
           <h3 class="text-xl font-bold text-white">Content & Social Media</h3>
           <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Short-form Reels, video storytelling, and consistent social media management that keep your audience engaged and ready to buy.</p>
         </div>
 
-        <!-- Service 6 -->
-        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow">
           <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">06</div>
           <h3 class="text-xl font-bold text-white">Traditional & Offline Marketing</h3>
           <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Print collateral, outdoor hoardings, event activations, and local market campaigns integrated seamlessly with your digital funnel.</p>
@@ -353,22 +339,116 @@
       </div>
 
       <div class="mt-14 grid md:grid-cols-3 gap-8">
-        <div class="p-8 rounded-2xl obsidian-card gold-border-glow transition">
+        <div class="p-8 rounded-2xl obsidian-card gold-border-glow">
           <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Step 01</span>
           <h3 class="text-xl font-bold text-white mt-2">Audit & Strategy Blueprint</h3>
           <p class="mt-3 text-sm text-zinc-400 leading-relaxed">We analyze your market, competitors, and current funnel to build a custom growth roadmap aligned with your revenue targets.</p>
         </div>
 
-        <div class="p-8 rounded-2xl obsidian-card gold-border-glow transition">
+        <div class="p-8 rounded-2xl obsidian-card gold-border-glow">
           <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Step 02</span>
           <h3 class="text-xl font-bold text-white mt-2">Creative & Campaign Launch</h3>
           <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Our team builds your web assets, ad creatives, and content engine—launching targeted campaigns across the right channels.</p>
         </div>
 
-        <div class="p-8 rounded-2xl obsidian-card gold-border-glow transition">
+        <div class="p-8 rounded-2xl obsidian-card gold-border-glow">
           <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Step 03</span>
           <h3 class="text-xl font-bold text-white mt-2">Sales Sync & Scale</h3>
           <p class="mt-3 text-sm text-zinc-400 leading-relaxed">We stay synced with your sales team on lead quality and follow-ups, doubling down on winning campaigns until deals close.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS & PROOF SECTION -->
+  <section id="results" class="py-24 px-6 bg-[#09090B] border-t border-[#222228]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Proven Impact</span>
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Built For Real Estate & Business Growth</h2>
+        <p class="mt-3 text-zinc-400">Here is how our campaigns and execution models create momentum for our partners.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-2xl obsidian-card border border-[#232329]">
+          <div class="text-[#E5C158] font-black text-4xl mb-4">01</div>
+          <h3 class="text-lg font-bold text-white">Real Estate Lead Pipelines</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+            Executing strategic campaigns and structured funnels for DTCP layouts and residential projects across Telangana, turning digital impressions into site visits.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl obsidian-card border border-[#232329]">
+          <div class="text-[#E5C158] font-black text-4xl mb-4">02</div>
+          <h3 class="text-lg font-bold text-white">Automotive Workshop Growth</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+            Structured short-form video campaigns and workshop walkthroughs designed to drive recurring local service appointments and customer footfall.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl obsidian-card border border-[#232329]">
+          <div class="text-[#E5C158] font-black text-4xl mb-4">03</div>
+          <h3 class="text-lg font-bold text-white">End-to-End Brand Scaling</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+            Combining premium web architecture, performance ads, and sales team alignment so marketing budgets directly translate into closed business.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-24 px-6 bg-[#0E0E12] border-t border-[#222228]">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Got Questions?</span>
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Frequently Asked Questions</h2>
+        <p class="mt-3 text-zinc-400">Everything you need to know about partnering with Rudra Solutions.</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="rounded-2xl obsidian-card border border-[#232329] overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-[#E5C158] transition">
+            <span>What does "Lead-to-Close" support actually mean?</span>
+            <span class="text-xl text-[#E5C158] font-normal">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-sm text-zinc-400 leading-relaxed">
+            Unlike standard agencies that hand over a spreadsheet of leads and walk away, we work alongside your sales team. We help refine follow-up scripts, analyze lead quality, optimize retargeting, and stay engaged until those inquiries convert into closed, paying customers.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="rounded-2xl obsidian-card border border-[#232329] overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-[#E5C158] transition">
+            <span>How fast can we launch our Google & Meta ad campaigns?</span>
+            <span class="text-xl text-[#E5C158] font-normal">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-sm text-zinc-400 leading-relaxed">
+            Once we complete our initial audit and strategy blueprint, we typically launch high-converting landing pages and targeted ad campaigns within 5 to 7 business days.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="rounded-2xl obsidian-card border border-[#232329] overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-[#E5C158] transition">
+            <span>Do you handle both online marketing and offline branding?</span>
+            <span class="text-xl text-[#E5C158] font-normal">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-sm text-zinc-400 leading-relaxed">
+            Yes! We provide full-stack solutions covering digital performance marketing, SEO, and web design, alongside traditional offline marketing collateral, outdoor hoardings, and video storytelling.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="rounded-2xl obsidian-card border border-[#232329] overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-[#E5C158] transition">
+            <span>How do we get started?</span>
+            <span class="text-xl text-[#E5C158] font-normal">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-sm text-zinc-400 leading-relaxed">
+            Simply fill out our project inquiry form below or message us directly on WhatsApp at +91 93916 08271. We will schedule a discovery call to discuss your growth goals within 24 hours.
+          </div>
         </div>
       </div>
     </div>
@@ -518,13 +598,30 @@
     </div>
   </footer>
 
-  <!-- Minimal JS for Mobile Menu & Current Year -->
+  <!-- JS for Mobile Menu, Year, and FAQ Accordions -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     menuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+    });
+
+    // FAQ Accordion Toggle Logic
+    const faqButtons = document.querySelectorAll('.faq-btn');
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('span:last-child');
+        
+        content.classList.toggle('hidden');
+        if (content.classList.contains('hidden')) {
+          icon.textContent = '+';
+        } else {
+          icon.textContent = '-';
+        }
+      });
     });
   </script>
 </body>
