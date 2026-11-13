@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rudra Solutions | Digital Marketing, Branding & Web Design Agency</title>
+  <meta name="description" content="Rudra Solutions helps ambitious businesses grow through performance marketing, SEO, branding, web design, and end-to-end sales closure support." />
+  
+  <!-- Favicon using your uploaded logo -->
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Cinzel for subtle luxury accents -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #09090B;
+      color: #F4F4F6;
+    }
+    /* Custom Metallic Gold Utilities matching R Globe Dark.png */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F6E08B 0%, #D4AF37 50%, #AA7C11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #F3D06B 0%, #D4AF37 55%, #B48811 100%);
+    }
+    .gold-gradient-bg:hover {
+      background: linear-gradient(135deg, #F9E086 0%, #DFBC48 55%, #C5971B 100%);
+    }
+    .gold-border-glow:hover {
+      border-color: rgba(212, 175, 55, 0.55);
+      box-shadow: 0 10px 35px -10px rgba(212, 175, 55, 0.16);
+    }
+    .obsidian-card {
+      background: linear-gradient(180deg, #141418 0%, #0E0E11 100%);
+      border: 1px solid #232329;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#D4AF37] selection:text-[#09090B]">
+
+  <!-- NAVIGATION -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-[#09090B]/90 backdrop-blur-md border-b border-[#222228]">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo + Name -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-[#0D0D0F] border border-[#D4AF37]/30 p-1 flex items-center justify-center overflow-hidden shadow-md shadow-black/60 group-hover:border-[#D4AF37]/70 transition">
+          <img src="logo.png" alt="Rudra Solutions Logo" class="w-full h-full object-contain" />
+        </div>
+        <div class="leading-none">
+          <span class="block text-lg sm:text-xl font-extrabold tracking-wider text-white">RUDRA</span>
+          <span class="block text-[11px] font-bold tracking-[0.26em] gold-gradient-text mt-0.5">SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300">
+        <a href="#about-us" class="hover:text-[#E5C158] transition">About Us</a>
+        <a href="#services" class="hover:text-[#E5C158] transition">Services</a>
+        <a href="#process" class="hover:text-[#E5C158] transition">How We Work</a>
+        <a href="#why-us" class="hover:text-[#E5C158] transition">Why Us</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-lg gold-gradient-bg text-[#09090B] font-bold transition shadow-md shadow-[#D4AF37]/15">
+          Book a Strategy Call
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" aria-label="Toggle Menu" class="md:hidden p-2 text-zinc-300 hover:text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#111114] border-b border-[#232329] px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="#about-us" class="block py-2 text-zinc-300 hover:text-[#E5C158]">About Us</a>
+      <a href="#services" class="block py-2 text-zinc-300 hover:text-[#E5C158]">Services</a>
+      <a href="#process" class="block py-2 text-zinc-300 hover:text-[#E5C158]">How We Work</a>
+      <a href="#why-us" class="block py-2 text-zinc-300 hover:text-[#E5C158]">Why Us</a>
+      <a href="#contact" class="block py-2.5 text-center rounded-lg gold-gradient-bg text-[#09090B] font-bold">Book a Strategy Call</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="pt-36 pb-24 px-6 relative overflow-hidden">
+    <!-- Subtle Luxury Gold Radial Glow -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_15%,_rgba(212,175,55,0.14),_transparent_55%)] pointer-events-none"></div>
+    
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      
+      <!-- Featured Logo Emblem -->
+      <div class="mx-auto w-24 h-24 sm:w-28 sm:h-28 mb-6 rounded-full bg-[#0D0D0F] border border-[#D4AF37]/35 p-2 shadow-2xl shadow-[#D4AF37]/10 flex items-center justify-center">
+        <img src="logo.png" alt="Rudra Solutions Emblem" class="w-full h-full object-contain" />
+      </div>
+
+      <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-[#D4AF37]/10 text-[#E5C158] border border-[#D4AF37]/30 mb-6">
+        Full-Stack Growth & Brand Strategy Agency
+      </span>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight max-w-4xl mx-auto">
+        Turn Attention Into Revenue With <span class="gold-gradient-text">Data-Driven Marketing</span>
+      </h1>
+
+      <p class="mt-6 text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+        We build high-converting websites, run ROI-focused Google & Meta ad campaigns, and stay beside your team from the first inquiry until the deal is closed.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl gold-gradient-bg text-[#09090B] font-bold text-base transition shadow-lg shadow-[#D4AF37]/20">
+          Get a Free Growth Proposal
+        </a>
+        <a href="https://wa.me/919391608271?text=Hi%20Rudra%20Solutions%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#141418] hover:bg-[#1C1C22] border border-[#2C2C34] hover:border-[#D4AF37]/50 text-white font-semibold text-base transition flex items-center justify-center gap-2">
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Key Metrics Bar -->
+      <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-[#222228] text-center">
+        <div>
+          <p class="text-3xl font-extrabold text-white">360°</p>
+          <p class="text-sm text-zinc-400 mt-1">Online & Offline Strategy</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold gold-gradient-text">Lead-to-Close</p>
+          <p class="text-sm text-zinc-400 mt-1">End-to-End Revenue Focus</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-white">Fast</p>
+          <p class="text-sm text-zinc-400 mt-1">Conversion-Ready Web Builds</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold gold-gradient-text">Full-Stack</p>
+          <p class="text-sm text-zinc-400 mt-1">Branding & Content Production</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US & PICTOGRAPHIC LEAD-TO-CLOSE JOURNEY -->
+  <section id="about-us" class="py-24 px-6 bg-[#0E0E12] border-t border-[#222228] relative">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Crisp Narrative Header -->
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-[#D4AF37]/10 text-[#E5C158] border border-[#D4AF37]/25">
+            About Rudra Solutions
+          </span>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+            Leads Don’t Pay Your Bills. <span class="gold-gradient-text">Closed Deals Do.</span>
+          </h2>
+          <p class="mt-5 text-zinc-300 text-base sm:text-lg leading-relaxed">
+            Most marketing agencies celebrate when a form is filled—and disappear right after. You’re left chasing cold contacts while ad budgets burn.
+          </p>
+          <p class="mt-4 text-zinc-400 text-base leading-relaxed">
+            We built <strong class="text-white">Rudra Solutions</strong> to fix that gap. Founded with a ground-up business mindset, we combine high-converting digital campaigns, strong brand storytelling, and hands-on conversion support—standing shoulder-to-shoulder with your team <span class="text-[#E5C158] font-semibold">until every qualified lead becomes a paying customer.</span>
+          </p>
+        </div>
+
+        <!-- Core Promise Callout Box -->
+        <div class="lg:col-span-5 p-7 rounded-2xl obsidian-card shadow-2xl">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-10 h-10 rounded-xl bg-[#D4AF37]/15 text-[#E5C158] flex items-center justify-center border border-[#D4AF37]/30">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </span>
+            <h3 class="text-lg font-bold text-white">Our Growth Commitment</h3>
+          </div>
+          <p class="text-sm text-zinc-400 leading-relaxed">
+            Whether you are launching a real estate project, scaling an automotive business, or building an emerging brand, we don’t act like an outside vendor—we operate as your in-house revenue partner.
+          </p>
+          <div class="mt-5 pt-5 border-t border-[#232329] grid grid-cols-2 gap-4 text-xs">
+            <div>
+              <p class="text-zinc-500 uppercase tracking-wider font-semibold">Typical Agencies</p>
+              <p class="text-rose-400 font-semibold mt-1">✕ Stop at "Lead Generated"</p>
+            </div>
+            <div>
+              <p class="text-zinc-500 uppercase tracking-wider font-semibold">Rudra Solutions</p>
+              <p class="text-emerald-400 font-semibold mt-1">✓ Stay Until "Deal Closed"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PICTOGRAPHIC JOURNEY DIAGRAM: FROM FIRST IMPRESSION TO CLOSED DEAL -->
+      <div class="mt-16 p-6 sm:p-10 rounded-3xl bg-[#09090B] border border-[#232329] relative overflow-hidden">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <p class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">How We Walk With You</p>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-1.5">The Rudra Lead-to-Closure Pipeline</h3>
+        </div>
+
+        <!-- 4-Node Visual Flow -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+          
+          <!-- Stage 1 -->
+          <div class="relative p-6 rounded-2xl obsidian-card flex flex-col items-center text-center gold-border-glow transition">
+            <div class="w-16 h-16 rounded-2xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#E5C158] flex items-center justify-center mb-4">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/>
+              </svg>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-zinc-500">Stage 01</span>
+            <h4 class="text-base font-bold text-white mt-1">Attract & Position</h4>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Targeted Google & Meta ads, Reels, and local visibility bring the right buyers to your brand.
+            </p>
+            <div class="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-7 h-7 rounded-full bg-[#141418] border border-[#2C2C34] items-center justify-center text-[#E5C158]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="relative p-6 rounded-2xl obsidian-card flex flex-col items-center text-center gold-border-glow transition">
+            <div class="w-16 h-16 rounded-2xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#E5C158] flex items-center justify-center mb-4">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+              </svg>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-zinc-500">Stage 02</span>
+            <h4 class="text-base font-bold text-white mt-1">Capture & Filter Leads</h4>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+              High-converting landing pages & WhatsApp funnels filter out junk inquiries so you talk to serious prospects.
+            </p>
+            <div class="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-7 h-7 rounded-full bg-[#141418] border border-[#2C2C34] items-center justify-center text-[#E5C158]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Stage 3 (Highlighted Gold Differentiator) -->
+          <div class="relative p-6 rounded-2xl bg-gradient-to-b from-[#D4AF37]/15 to-[#0E0E11] border border-[#D4AF37]/50 flex flex-col items-center text-center shadow-lg shadow-[#D4AF37]/5">
+            <span class="absolute -top-3 px-3 py-0.5 rounded-full gold-gradient-bg text-[#09090B] text-[10px] font-extrabold uppercase tracking-wider">
+              Where Others Stop
+            </span>
+            <div class="w-16 h-16 rounded-2xl bg-[#D4AF37]/20 border border-[#E5C158]/50 text-[#F3D06B] flex items-center justify-center mb-4">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-[#E5C158]">Stage 03</span>
+            <h4 class="text-base font-bold text-white mt-1">Nurture & Follow-Up</h4>
+            <p class="text-xs text-zinc-300 mt-2 leading-relaxed">
+              We stay with you—building follow-up scripts, retargeting warm prospects, and tracking lead feedback with your sales team.
+            </p>
+            <div class="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-7 h-7 rounded-full gold-gradient-bg text-[#09090B] items-center justify-center shadow">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Stage 4 (Final Revenue Outcome) -->
+          <div class="relative p-6 rounded-2xl bg-gradient-to-b from-emerald-500/12 to-[#0E0E11] border border-emerald-500/40 flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-500/20 border border-emerald-400/50 text-emerald-400 flex items-center justify-center mb-4">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+              </svg>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-400">Stage 04</span>
+            <h4 class="text-base font-bold text-white mt-1">Deal Closed & Scaled</h4>
+            <p class="text-xs text-zinc-300 mt-2 leading-relaxed">
+              Site visits convert, invoices get paid, and we double down on the exact campaigns that drove real revenue.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Bottom Visual Progress Bar -->
+        <div class="mt-8 pt-6 border-t border-[#232329] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+          <div class="flex items-center gap-2 text-zinc-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#D4AF37]"></span>
+            <span>End-to-End Accountability: We measure success by <strong class="text-white">closed business</strong>, not vanity clicks.</span>
+          </div>
+          <a href="#contact" class="text-[#E5C158] hover:text-[#F6E08B] font-bold shrink-0">
+            Let’s build your pipeline →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-24 px-6 bg-[#09090B] border-y border-[#222228]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">What We Do</span>
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Services Built for Measurable Growth</h2>
+        <p class="mt-3 text-zinc-400">Everything you need to position your brand, generate qualified leads, and close more sales.</p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service 1 -->
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+          <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">01</div>
+          <h3 class="text-xl font-bold text-white">Google & Meta Ads</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Targeted search, display, Instagram, and Facebook lead-generation campaigns engineered to lower your cost per acquisition.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+          <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">02</div>
+          <h3 class="text-xl font-bold text-white">Web Design & Development</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Fast, mobile-first websites and landing pages designed with clear messaging and conversion triggers that turn visitors into inquiries.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+          <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">03</div>
+          <h3 class="text-xl font-bold text-white">Search Engine Optimization</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Technical SEO, local Google Business optimization, and high-intent content strategies to rank your brand where buyers are searching.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+          <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">04</div>
+          <h3 class="text-xl font-bold text-white">Branding & Identity</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Distinctive logos, brand guidelines, packaging, and market positioning that establish instant trust and premium recall.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+          <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">05</div>
+          <h3 class="text-xl font-bold text-white">Content & Social Media</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Short-form Reels, video storytelling, and consistent social media management that keep your audience engaged and ready to buy.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="p-7 rounded-2xl obsidian-card gold-border-glow transition">
+          <div class="w-11 h-11 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/25 text-[#E5C158] flex items-center justify-center font-bold text-lg mb-5">06</div>
+          <h3 class="text-xl font-bold text-white">Traditional & Offline Marketing</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Print collateral, outdoor hoardings, event activations, and local market campaigns integrated seamlessly with your digital funnel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section id="process" class="py-24 px-6 bg-[#0E0E12]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Execution Framework</span>
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Our 3-Step Growth Process</h2>
+        <p class="mt-3 text-zinc-400">Clear milestones, transparent reporting, and zero guesswork.</p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-2xl obsidian-card gold-border-glow transition">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Step 01</span>
+          <h3 class="text-xl font-bold text-white mt-2">Audit & Strategy Blueprint</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">We analyze your market, competitors, and current funnel to build a custom growth roadmap aligned with your revenue targets.</p>
+        </div>
+
+        <div class="p-8 rounded-2xl obsidian-card gold-border-glow transition">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Step 02</span>
+          <h3 class="text-xl font-bold text-white mt-2">Creative & Campaign Launch</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Our team builds your web assets, ad creatives, and content engine—launching targeted campaigns across the right channels.</p>
+        </div>
+
+        <div class="p-8 rounded-2xl obsidian-card gold-border-glow transition">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Step 03</span>
+          <h3 class="text-xl font-bold text-white mt-2">Sales Sync & Scale</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">We stay synced with your sales team on lead quality and follow-ups, doubling down on winning campaigns until deals close.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY RUDRA SOLUTIONS -->
+  <section id="why-us" class="py-20 px-6 bg-[#09090B] border-y border-[#222228]">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Why Partner With Us</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">One Partner for Digital Speed and Ground-Level Reach</h2>
+        <p class="mt-4 text-zinc-400 leading-relaxed">
+          Most agencies only understand vanity metrics like likes and impressions. At Rudra Solutions, every design, campaign, and video is built around business outcomes—qualified leads, walk-ins, and closed deals.
+        </p>
+        <ul class="mt-6 space-y-3 text-sm text-zinc-300">
+          <li class="flex items-center gap-3">
+            <span class="text-[#E5C158] font-bold">✓</span> Hands-on support from first lead to final sale closure
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-[#E5C158] font-bold">✓</span> Unified online (Ads/SEO/Social) + offline brand execution
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-[#E5C158] font-bold">✓</span> Fast turnaround times without agency bloat
+          </li>
+        </ul>
+      </div>
+
+      <div class="p-8 rounded-2xl obsidian-card shadow-2xl">
+        <h3 class="text-xl font-bold text-white">Ready to scale your business?</h3>
+        <p class="mt-2 text-sm text-zinc-400">Reach out directly via phone, WhatsApp, or social channels—we respond within 24 hours.</p>
+        <div class="mt-6 space-y-4 text-sm">
+          <a href="tel:+919391608271" class="block p-4 rounded-xl bg-[#16161B] hover:border-[#D4AF37]/50 border border-[#26262E] transition">
+            <p class="text-zinc-400 text-xs">Call / WhatsApp Direct</p>
+            <p class="text-white font-semibold mt-0.5">+91 93916 08271</p>
+          </a>
+          <div class="grid grid-cols-2 gap-4">
+            <a href="https://www.instagram.com/rudra__solutions/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-[#16161B] hover:border-[#D4AF37]/50 border border-[#26262E] transition flex items-center gap-3">
+              <svg class="w-5 h-5 text-[#E5C158] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <div>
+                <p class="text-zinc-400 text-xs">Instagram</p>
+                <p class="text-white font-semibold">@rudra__solutions</p>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/share/1MHvEFz284/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-[#16161B] hover:border-[#D4AF37]/50 border border-[#26262E] transition flex items-center gap-3">
+              <svg class="w-5 h-5 text-[#E5C158] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+              </svg>
+              <div>
+                <p class="text-zinc-400 text-xs">Facebook</p>
+                <p class="text-white font-semibold">Rudra Solutions</p>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-[#16161B] border border-[#26262E]">
+            <p class="text-zinc-400 text-xs">Location</p>
+            <p class="text-white font-semibold mt-0.5">Hyderabad, Telangana, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-24 px-6 bg-[#0E0E12]">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#E5C158]">Get In Touch</span>
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Start Your Project</h2>
+        <p class="mt-3 text-zinc-400">Fill out the form below or message us directly on WhatsApp.</p>
+      </div>
+
+      <!-- FREE WORKING CONTACT FORM VIA WEB3FORMS -->
+      <form action="https://api.web3forms.com/submit" method="POST" class="mt-10 p-8 rounded-2xl obsidian-card space-y-5 shadow-2xl">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+        <input type="hidden" name="subject" value="New Website Inquiry - Rudra Solutions" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
+        <div>
+          <label for="name" class="block text-sm font-medium text-zinc-300 mb-1.5">Your Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name"
+            class="w-full px-4 py-3 rounded-xl bg-[#09090B] border border-[#26262E] text-white placeholder-zinc-600 focus:outline-none focus:border-[#D4AF37]" />
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="email" class="block text-sm font-medium text-zinc-300 mb-1.5">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="you@company.com"
+              class="w-full px-4 py-3 rounded-xl bg-[#09090B] border border-[#26262E] text-white placeholder-zinc-600 focus:outline-none focus:border-[#D4AF37]" />
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-zinc-300 mb-1.5">Phone / WhatsApp *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+91 93916 08271"
+              class="w-full px-4 py-3 rounded-xl bg-[#09090B] border border-[#26262E] text-white placeholder-zinc-600 focus:outline-none focus:border-[#D4AF37]" />
+          </div>
+        </div>
+
+        <div>
+          <label for="service" class="block text-sm font-medium text-zinc-300 mb-1.5">Service Interested In</label>
+          <select id="service" name="service"
+            class="w-full px-4 py-3 rounded-xl bg-[#09090B] border border-[#26262E] text-white focus:outline-none focus:border-[#D4AF37]">
+            <option value="Digital Marketing (Google & Meta Ads)">Digital Marketing (Google & Meta Ads)</option>
+            <option value="Web Design & Development">Web Design & Development</option>
+            <option value="Branding & Content Creation">Branding & Content Creation</option>
+            <option value="SEO & Social Media Management">SEO & Social Media Management</option>
+            <option value="Full-Service Growth Retainer">Full-Service Growth Retainer</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-zinc-300 mb-1.5">Project Details *</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Tell us about your business and goals..."
+            class="w-full px-4 py-3 rounded-xl bg-[#09090B] border border-[#26262E] text-white placeholder-zinc-600 focus:outline-none focus:border-[#D4AF37]"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full py-4 rounded-xl gold-gradient-bg text-[#09090B] font-bold text-base transition shadow-lg shadow-[#D4AF37]/20">
+          Send Inquiry
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919391608271?text=Hi%20Rudra%20Solutions%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20connect."
+     target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center shadow-xl shadow-emerald-500/30 transition transform hover:scale-105">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+    </svg>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="py-12 px-6 bg-[#09090B] border-t border-[#222228] text-sm text-zinc-500">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="Rudra Solutions" class="w-9 h-9 object-contain" />
+        <p>© <span id="year"></span> <span class="text-zinc-300 font-semibold">Rudra Solutions</span>. All rights reserved.</p>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#about-us" class="hover:text-[#E5C158] transition">About Us</a>
+        <a href="https://www.instagram.com/rudra__solutions/" target="_blank" rel="noopener noreferrer" class="hover:text-[#E5C158] transition">Instagram</a>
+        <a href="https://www.facebook.com/share/1MHvEFz284/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="hover:text-[#E5C158] transition">Facebook</a>
+        <a href="tel:+919391608271" class="hover:text-[#E5C158] transition">+91 93916 08271</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Minimal JS for Mobile Menu & Current Year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
